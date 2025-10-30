@@ -8,7 +8,8 @@ function is_palin(n){
 }
 
 function nextPalindrome(num) {
-	for(let i=num;;i++){
+	num = Number(num);
+	for(let i=num+1;;i++){
 		if(is_palin(i)){
 			return i;
 		}
